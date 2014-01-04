@@ -34,14 +34,14 @@
     </property>
     <property name="action-4" type="empty">
       <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^(top|bottom|left|right|tright|rightt|tleft|leftt|bright|rightb|bleft|leftb)$"/>
+      <property name="pattern" type="string" value="^(top|bottom|left|right|tright|rightt|tleft|leftt|bright|rightb|bleft|leftb|center)$"/>
       <property name="save" type="bool" value="true"/>
       <property name="command" type="string" value="/home/marko/.dotfiles/scripts/position.sh \1"/>
     </property>
     <property name="action-9" type="empty">
       <property name="type" type="int" value="1"/>
       <property name="save" type="bool" value="false"/>
-      <property name="pattern" type="string" value="^to (.*) ?(.*)?$"/>
+      <property name="pattern" type="string" value="^to (.*) ?([0-9]+)?$"/>
       <property name="command" type="string" value="/home/marko/.dotfiles/scripts/to.sh \1 \2"/>
     </property>
     <property name="action-10" type="empty">
@@ -51,9 +51,9 @@
       <property name="command" type="string" value="/home/marko/.dotfiles/scripts/close.sh \1"/>
     </property>
     <property name="action-11" type="empty">
-      <property name="pattern" type="string" value="^vol([0-9]+|\&lt;|\&gt;|\?)?$"/>
+      <property name="pattern" type="string" value="^vol([0-9]+|\&lt;+|\&gt;+|\?)?$"/>
       <property name="type" type="int" value="1"/>
-      <property name="save" type="bool" value="true"/>
+      <property name="save" type="bool" value="false"/>
       <property name="command" type="string" value="/home/marko/.dotfiles/scripts/vol.sh \1"/>
     </property>
     <property name="action-13" type="empty">
@@ -64,13 +64,13 @@
     </property>
     <property name="action-5" type="empty">
       <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^(suspend|sleep)$"/>
+      <property name="pattern" type="string" value="^(xsuspend|xsleep)$"/>
       <property name="command" type="string" value="/home/marko/.dotfiles/scripts/suspend.sh"/>
       <property name="save" type="bool" value="true"/>
     </property>
     <property name="action-14" type="empty">
       <property name="command" type="string" value="/home/marko/.dotfiles/scripts/lock.sh"/>
-      <property name="pattern" type="string" value="^lock$"/>
+      <property name="pattern" type="string" value="^xlock$"/>
       <property name="save" type="bool" value="true"/>
       <property name="type" type="int" value="1"/>
     </property>
