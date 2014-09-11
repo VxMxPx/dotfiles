@@ -25,4 +25,3 @@ sleep $timeout
 
 [[ "x$message" != "x" ]] && notify-send "$message";
 mpg123 -q $(dirname $0)/buzz.mp3
-

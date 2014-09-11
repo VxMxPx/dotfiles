@@ -4,7 +4,7 @@
 function getScreenSettings () {
     screen=(
         # Desktop settings
-        [decoration_height]=28 # Windows decoration size height
+        [decoration_height]=12 # Windows decoration size height
         [decoration_width]=4   # Windows decoration size width
         # Screen defaults
         [width]=0          # Screen width
@@ -22,14 +22,14 @@ function getScreenSettings () {
         # Set the LEFT screen
         screen[width]=1680
         screen[height]=1050
-        screen[padding_top]=24
-        screen[padding_left]=44
+        screen[padding_bottom]=24
+        screen[padding_left]=0
     else
         # Set the RIGHT screen
         screen[width]=1920
         screen[height]=1080
         screen[left]=1680
-        screen[top]=-24
+        screen[top]=0
     fi
 
     # Calculate usable region of screen
@@ -121,85 +121,88 @@ function updatePositionAndSize() {
     xdotool windowsize $1 $4 $5
 }
 
-# ------------------------------------------------------------------------------
+# Run the script!
+function selfRun() {
+    # Declare global variables
+    declare -A window
+    declare -A screen
 
-# Declare global variables
-declare -A window
-declare -A screen
+    # Wait fot app-finder to actually close
+    while [[ $(xdotool getactivewindow getwindowname | grep -E "Application Finder") ]]; do
+        sleep 0.1
+    done
 
-# Wait fot app-finder to actually close
-while [[ $(xdotool getactivewindow getwindowname | grep -E "Application Finder") ]]; do
-    sleep 0.1
-done
+    # Get active window
+    getActiveWindow
 
-# Get active window
-getActiveWindow
+    # Get screen variables...
+    getScreenSettings ${window[left]}
 
-# Get screen variables...
-getScreenSettings ${window[left]}
+    # Where to position the window?
+    # top, right, bottom, left, center, top-left, top-right, bottom-left, bottom-right
+    newPosition=$1
+    debug=false
+    [[ $2 == "-d" ]] && debug=true
 
-# Where to position the window?
-# top, right, bottom, left, center, top-left, top-right, bottom-left, bottom-right
-newPosition=$1
-debug=false
-[[ $2 == "-d" ]] && debug=true
+    # TOP ------------------------------
+    if [[ $newPosition == "top" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords top) $(getPostionCords left) \
+            $(getSize fullx) $(getSize halfy)
+    # RIGHT ------------------------------
+    elif [[ $newPosition == "right" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords top) $(getPostionCords right) \
+            $(getSize halfx) $(getSize fully)
+    # BOTTOM ------------------------------
+    elif [[ $newPosition == "bottom" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords bottom) $(getPostionCords left) \
+            $(getSize fullx) $(getSize halfy)
+    # LEFT ------------------------------
+    elif [[ $newPosition == "left" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords top) $(getPostionCords left) \
+            $(getSize halfx) $(getSize fully)
+    # TOP-LEFT ------------------------------
+    elif [[ $newPosition == "tleft" || $newPosition == "leftt" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords top) $(getPostionCords left) \
+            $(getSize halfx) $(getSize halfy)
+    # TOP-RIGHT ------------------------------
+    elif [[ $newPosition == "tright" || $newPosition == "rightt" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords top) $(getPostionCords right) \
+            $(getSize halfx) $(getSize halfy)
+    # BOTTOM-LEFT ------------------------------
+    elif [[ $newPosition == "bleft" || $newPosition == "leftb" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords bottom) $(getPostionCords left) \
+            $(getSize halfx) $(getSize halfy)
+    # BOTTOM-RIGHT ------------------------------
+    elif [[ $newPosition == "bright" || $newPosition == "rightb" ]]; then
+        updatePositionAndSize \
+            ${window[active]} \
+            $(getPostionCords bottom) $(getPostionCords right) \
+            $(getSize halfx) $(getSize halfy)
+    elif [[ $newPosition == "center" ]]; then
+        centerWindow ${window[active]}
+    else
+        echo "Invalid parameter:" $newPosition
+        exit 1
+    fi
+}
 
-# TOP ------------------------------
-if [[ $newPosition == "top" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords top) $(getPostionCords left) \
-        $(getSize fullx) $(getSize halfy)
-# RIGHT ------------------------------
-elif [[ $newPosition == "right" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords top) $(getPostionCords right) \
-        $(getSize halfx) $(getSize fully)
-# BOTTOM ------------------------------
-elif [[ $newPosition == "bottom" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords bottom) $(getPostionCords left) \
-        $(getSize fullx) $(getSize halfy)
-# LEFT ------------------------------
-elif [[ $newPosition == "left" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords top) $(getPostionCords left) \
-        $(getSize halfx) $(getSize fully)
-# TOP-LEFT ------------------------------
-elif [[ $newPosition == "tleft" || $newPosition == "leftt" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords top) $(getPostionCords left) \
-        $(getSize halfx) $(getSize halfy)
-# TOP-RIGHT ------------------------------
-elif [[ $newPosition == "tright" || $newPosition == "rightt" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords top) $(getPostionCords right) \
-        $(getSize halfx) $(getSize halfy)
-# BOTTOM-LEFT ------------------------------
-elif [[ $newPosition == "bleft" || $newPosition == "leftb" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords bottom) $(getPostionCords left) \
-        $(getSize halfx) $(getSize halfy)
-# BOTTOM-RIGHT ------------------------------
-elif [[ $newPosition == "bright" || $newPosition == "rightb" ]]; then
-    updatePositionAndSize \
-        ${window[active]} \
-        $(getPostionCords bottom) $(getPostionCords right) \
-        $(getSize halfx) $(getSize halfy)
-elif [[ $newPosition == "center" ]]; then
-    centerWindow ${window[active]}
-else
-    echo "Invalid parameter:" $newPosition
-    exit 1
-fi
+selfRun $1 $2
 
 # Repeat command if we're in terminal
-# [[ $(xdotool getwindowname $active | grep -E " - Terminal") != ""  ]] && position;
+[[ $(xdotool getactivewindow getwindowname | grep -E "Terminal - ") != ""  ]] && selfRun $1 $2;
 
 exit 0

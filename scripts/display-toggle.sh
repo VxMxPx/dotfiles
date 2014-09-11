@@ -7,7 +7,7 @@ EXT="HDMI-0"
 IN="DVI-I-2"
 
 if [[ $1 == "on" ]]; then
-	xrandr --output $IN --auto --primary --output $EXT --auto --right-of $IN
+    xrandr --output $IN --auto --primary --output $EXT --auto --right-of $IN
 else
     xrandr --output $IN --auto --output $EXT --off
 fi

@@ -9,5 +9,5 @@ done
 active=$(xdotool getactivewindow);
 title=$(xdotool getwindowname $active);
 if [ "x$title" != "xDesktop" ]; then
-	wmctrl -r :ACTIVE: -b toggle,fullscreen
+    wmctrl -r :ACTIVE: -b toggle,fullscreen
 fi

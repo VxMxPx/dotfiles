@@ -3,14 +3,15 @@
 # Description: Change volume.
 # Command: ^vol([0-9]+|\<|\>|\?)?$
 # Examples: vol,vol>,vol<,vol50,vol?
+# Need: extra/alsa-utils
 
-# function showVolumeLevel {
-#     # Front Right: Playback 22 [71%] [-13.50dB] [on]
-#     regex=" \[([0-9]+\%)\] "
-#     volume=$(amixer get Master | tail -1)
-#     [[ $volume =~ $regex ]]
-#     notify-send -i speaker "Volume: ${BASH_REMATCH[1]}"
-# }
+function showVolumeLevel {
+    # Front Right: Playback 22 [71%] [-13.50dB] [on]
+    regex=" \[([0-9]+\%)\] "
+    volume=$(amixer get Master | tail -1)
+    [[ $volume =~ $regex ]]
+    notify-send -i speaker "Volume: ${BASH_REMATCH[1]}"
+}
 
 function getVolumeLevel {
     # Front Right: Playback 22 [71%] [-13.50dB] [on]
@@ -22,33 +23,15 @@ function getVolumeLevel {
 
 if [[ "x$1" == "x" ]]; then
     # No parameters: vol - Toggle master on/off
-    # amixer -q set Master toggle # XFCE4
-    # KDE Way...
-    qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/mute org.qtproject.Qt.QAction.trigger
+    amixer -q set Master toggle # XFCE4
 elif [[ ${1:0:1} == ">" ]];
 then
     # > 10% More
-    # amixer -q set Master 10%+; # XFCE4
-    # KDE Way...
-    count=$(echo $1 | grep -o ">" | wc -l)
-    for (( c=1; c<=$count; c++ ))
-    do
-        qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/increase_volume org.qtproject.Qt.QAction.trigger
-    done
+    amixer -q set Master 10%+; # XFCE4
 elif [[ ${1:0:1} == "<" ]];
 then
     # 10% Less
-    # amixer -q set Master 10%-; # XFCE4 Way
-    # KDE Way...
-    count=$(echo $1 | grep -o "<" | wc -l)
-    for (( c=1; c<=$count; c++ ))
-    do
-        qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/decrease_volume org.qtproject.Qt.QAction.trigger
-    done
-elif [[ "$1" == "?" ]];
-then
-    qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/increase_volume org.qtproject.Qt.QAction.trigger
-    qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/decrease_volume org.qtproject.Qt.QAction.trigger
+    amixer -q set Master 10%-; # XFCE4 Way
 else
     new=$1
     # Costume volume 0-100
@@ -64,6 +47,6 @@ else
     fi
 
     amixer -q set Master $new%
-    qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/increase_volume org.qtproject.Qt.QAction.trigger
-    qdbus-qt4 org.kde.kmix /kmix/KMixWindow/actions/decrease_volume org.qtproject.Qt.QAction.trigger
 fi
+
+showVolumeLevel

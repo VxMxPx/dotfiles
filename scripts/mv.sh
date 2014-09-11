@@ -14,8 +14,8 @@ while [[ $(xdotool getactivewindow getwindowname | grep -E "Application Finder")
 done
 
 screen_left=1680
-screen1_top=53
-screen2_top=24
+screen1_top=0
+screen2_top=0
 desktop=$1
 screen=$2
 position=$3
@@ -23,8 +23,8 @@ active=$(xdotool getactivewindow)
 
 # Check if we have omited desktop completely
 if [[ $desktop == "<" || $desktop == ">" ]]; then
-	screen=$desktop
-	desktop=""
+    screen=$desktop
+    desktop=""
 fi
 
 # Move to the another desktop
@@ -45,6 +45,10 @@ if [[ $screen != "" && $screen != "." ]]; then
 
     wmctrl -r :ACTIVE: -b remove,fullscreen
     wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz
+
+    if [[ $left < 0 ]]; then
+        left=0
+    fi
 
     if [[ $screen == "<" ]]; then
         xdotool windowmove $active $(( $left - $screen_left)) $(( $top - $screen2_top ));

@@ -9,5 +9,5 @@ done
 active=$(xdotool getactivewindow);
 title=$(xdotool getwindowname $active);
 if [ "x$title" != "xDesktop" ]; then
- 	xdotool windowminimize $active;
+    xdotool windowminimize $active;
 fi

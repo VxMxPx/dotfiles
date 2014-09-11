@@ -9,5 +9,5 @@ done
 active=$(xdotool getactivewindow);
 title=$(xdotool getwindowname $active);
 if [ "x$title" != "xDesktop" ]; then
-	wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
+    wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
 fi

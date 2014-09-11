@@ -20,5 +20,5 @@ done
 active=$(xdotool getactivewindow);
 title=$(xdotool getwindowname $active);
 if [[ "x$title" != "xDesktop" && "x$title" != "xplasma-desktop" ]]; then
-	wmctrl -c :ACTIVE:
+    wmctrl -c :ACTIVE:
 fi
