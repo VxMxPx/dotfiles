@@ -1,17 +1,39 @@
-# File created by KDE Gtk Config
-# Configs for GTK2 programs 
-
-include "/usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc"
-include "/etc/gtk-2.0/gtkrc"
-style "user-font" 
+style "panel"
 {
-	font_name="Droid Sans Regular"
+  bg[NORMAL]      = "#414140"
+  bg[ACTIVE]      = "#414140"
+  bg[SELECTED]    = "#414140"
+  bg[PRELIGHT]    = "#414140"
+  bg[INSENSITIVE] = "#414140" 
+
+  base[NORMAL]      = "#414140"
+  base[ACTIVE]      = "#414140"
+  base[SELECTED]    = "#414140"
+  base[PRELIGHT]    = "#414140"
+  base[INSENSITIVE] = "#414140"
+
+  fg[NORMAL]   = "#cccccc"
+  fg[SELECTED] = "#eeeeee"
+  fg[ACTIVE]   = "#eeeeee"
+  fg[PRELIGHT]    = "#eeeeee"
+  fg[INSENSITIVE] = "#eeeeee" 
+
+  text[NORMAL]   = "#cccccc"
+  text[SELECTED] = "#eeeeee"
+  text[ACTIVE]   = "#eeeeee"
+  text[PRELIGHT]    = "#eeeeee"
+  text[INSENSITIVE] = "#eeeeee" 
+
+  font_name    = "Ubuntu Condensed, 10"
 }
-widget_class "*" style "user-font"
-gtk-font-name="Droid Sans Regular 10"
-gtk-theme-name="oxygen-gtk"
-gtk-icon-theme-name="KFaenza"
-gtk-fallback-icon-theme="Faenza"
-gtk-toolbar-style=GTK_TOOLBAR_ICONS
-gtk-menu-images=0
-gtk-button-images=0
+
+widget_class "*Panel*"      style "panel"
+widget "*Panel*"            style "panel"
+class "*Panel*"             style "panel"
+widget_class "*Panel*GtkToggleButton" 	style "panel"
+widget_class "*Panel*GtkButton" 	style "panel"
+widget_class "*.Panel*Button*GtkLabel" 	style "panel"
+widget_class "*.Panel*GtkLabel" 	style "panel"
+widget "*tasklist*" 			style "panel"
+
+widget "*Appfinder*" style "panel"

@@ -5,28 +5,41 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+# PS1='[\u@\h \W]\$ '
 
-# some more ls aliases
+# Some more aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias git-tf='/home/maarko/.git-tf/git-tf'
-alias pxtoem='/home/maarko/.pxtoem/pxtoem.py'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 alias phpunit='phpunit --colors'
 alias php-server='php -S localhost:8000'
-alias cd-active-projects='cd ~/Projects/active'
+alias mysli='cd ~/Projects/mysli.dev/code'
 alias vbox='sudo modprobe -a vboxdrv vboxnetflt vboxnetadp'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias upme='yaourt -Syua'
+alias net-access='/home/marko/.scripts/scripts/net-access.sh'
+alias ssh-server='ssh marko@mystic-server'
+alias yesno='~/.scripts/scripts/yesno.py'
+alias xrun='~/.scripts/xrun'
+# Git
+alias gicm='git commit -m'
+alias gip='git push'
+alias giaa='git add --all'
+alias gia='git add'
+alias gis='git status'
+alias gid='git diff'
+alias phpt='/home/marko/Projects/phpt/run-tests.php --show-diff'
+alias tflix='pirate-get --color -p 2 --custom "peerflix %s && smplayer http://192.168.1.180:8888"'
 
+# PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;37m\]\w\[\033[00m\]\[\033[01;30m\])\[\033[00m\]\n\[\033[01;30m\]➜\[\033[00m\] '
 PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;37m\]\w\[\033[00m\]\[\033[01;30m\])\[\033[00m\]\n\[\033[01;30m\]➜\[\033[00m\] '
 
 export EDITOR="nano"
-
-# export PATH=$PATH:/home/maarko/.gem/ruby/2.0.0/bin
+export HISTCONTROL=ignorespace
+export TEST_PHP_EXECUTABLE=$(which php)
 
 # Make new tabs inherit current directory in Gnome Terminal
-# source /etc/profile.d/vte.sh
-
-# Fix line wrap in xfce4 terminal
-# shopt -s checkwinsize
+source /etc/profile.d/vte.sh
