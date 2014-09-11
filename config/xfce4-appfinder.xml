@@ -1,104 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-appfinder" version="1.0">
-  <property name="last" type="empty">
-    <property name="window-height" type="int" value="845"/>
-    <property name="window-width" type="int" value="894"/>
-    <property name="pane-position" type="int" value="180"/>
-  </property>
   <property name="actions" type="array">
+    <value type="int" value="1"/>
     <value type="int" value="2"/>
     <value type="int" value="3"/>
     <value type="int" value="4"/>
+    <value type="int" value="5"/>
+    <value type="int" value="6"/>
+    <value type="int" value="7"/>
+    <value type="int" value="8"/>
     <value type="int" value="9"/>
     <value type="int" value="10"/>
     <value type="int" value="11"/>
+    <value type="int" value="12"/>
     <value type="int" value="13"/>
-    <value type="int" value="5"/>
     <value type="int" value="14"/>
     <value type="int" value="15"/>
     <value type="int" value="16"/>
     <value type="int" value="17"/>
-    <value type="int" value="1"/>
-    <property name="action-2" type="empty">
-      <property name="type" type="int" value="1"/>
+    <value type="int" value="18"/>
+    <value type="int" value="20"/>
+    <value type="int" value="21"/>
+    <value type="int" value="22"/>
+    <value type="int" value="19"/>
+    <property name="action-1" type="empty">
       <property name="pattern" type="string" value="^settings$"/>
-      <property name="command" type="string" value="systemsettings"/>
+      <property name="type" type="int" value="1"/>
+      <property name="command" type="string" value="xfce4-settings-manager"/>
       <property name="save" type="bool" value="true"/>
     </property>
-    <property name="action-3" type="empty">
-      <property name="type" type="int" value="1"/>
+    <property name="action-2" type="empty">
       <property name="pattern" type="string" value="^(fullscreen|maximize|minimize)$"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/\1.sh"/>
+      <property name="type" type="int" value="1"/>
+      <property name="save" type="bool" value="true"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/\1.sh"/>
+    </property>
+    <property name="action-3" type="empty">
+      <property name="pattern" type="string" value="^(top|bottom|left|right|tright|rightt|tleft|leftt|bright|rightb|bleft|leftb|center)$"/>
+      <property name="type" type="int" value="1"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/position.sh \1"/>
       <property name="save" type="bool" value="true"/>
     </property>
     <property name="action-4" type="empty">
-      <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^(top|bottom|left|right|tright|rightt|tleft|leftt|bright|rightb|bleft|leftb|center)$"/>
-      <property name="save" type="bool" value="true"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/position.sh \1"/>
-    </property>
-    <property name="action-9" type="empty">
-      <property name="type" type="int" value="1"/>
-      <property name="save" type="bool" value="false"/>
       <property name="pattern" type="string" value="^to (.*) ?([0-9]+)?$"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/to.sh \1 \2"/>
-    </property>
-    <property name="action-10" type="empty">
-      <property name="pattern" type="string" value="^close ?([1-9])?$"/>
       <property name="type" type="int" value="1"/>
-      <property name="save" type="bool" value="true"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/close.sh \1"/>
-    </property>
-    <property name="action-11" type="empty">
-      <property name="pattern" type="string" value="^vol([0-9]+|\&lt;+|\&gt;+|\?)?$"/>
-      <property name="type" type="int" value="1"/>
-      <property name="save" type="bool" value="false"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/vol.sh \1"/>
-    </property>
-    <property name="action-13" type="empty">
-      <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^k(si|us)$"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/skey.sh \1"/>
-      <property name="save" type="bool" value="true"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/to.sh \1 \2"/>
     </property>
     <property name="action-5" type="empty">
+      <property name="pattern" type="string" value="^close ?([1-9])?$"/>
       <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^(xsuspend|xsleep)$"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/suspend.sh"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/close.sh \1"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-6" type="empty">
+      <property name="pattern" type="string" value="^vol([0-9]+|\&lt;+|\&gt;+|\?)?$"/>
+      <property name="type" type="int" value="1"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/vol.sh \1"/>
+    </property>
+    <property name="action-7" type="empty">
+      <property name="pattern" type="string" value="^k(si|us)$"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/skey.sh \1"/>
+      <property name="save" type="bool" value="true"/>
+      <property name="type" type="int" value="1"/>
+    </property>
+    <property name="action-8" type="empty">
+      <property name="pattern" type="string" value="xsleep"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/suspend.sh"/>
+      <property name="save" type="bool" value="true"/>
+      <property name="type" type="int" value="0"/>
+    </property>
+    <property name="action-9" type="empty">
+      <property name="command" type="string" value="xflock4"/>
+      <property name="pattern" type="string" value="xlock"/>
+      <property name="type" type="int" value="0"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-10" type="empty">
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/display-toggle.sh \1"/>
+      <property name="save" type="bool" value="true"/>
+      <property name="pattern" type="string" value="^sec(on|off)$"/>
+      <property name="type" type="int" value="1"/>
+    </property>
+    <property name="action-11" type="empty">
+      <property name="pattern" type="string" value="^mv([\.0-9\&lt;\&gt;])([\.\&lt;\&gt;])? ?([a-z]+)?$"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/mv.sh \1 \2 \3"/>
+      <property name="save" type="bool" value="true"/>
+      <property name="type" type="int" value="1"/>
+    </property>
+    <property name="action-12" type="empty">
+      <property name="pattern" type="string" value="^buzz([0-9a-z]+) ?(.*)?$"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/buzz.sh \1 &quot;\2&quot;"/>
+      <property name="save" type="bool" value="false"/>
+      <property name="type" type="int" value="1"/>
+    </property>
+    <property name="action-13" type="empty">
+      <property name="pattern" type="string" value="terminal"/>
+      <property name="command" type="string" value="xfce4-terminal"/>
       <property name="save" type="bool" value="true"/>
     </property>
     <property name="action-14" type="empty">
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/lock.sh"/>
-      <property name="pattern" type="string" value="^xlock$"/>
+      <property name="pattern" type="string" value="twitter"/>
+      <property name="command" type="string" value="xdg-open &quot;/home/marko/.local/share/applications/chrome-https___twitter.com_.desktop&quot;"/>
       <property name="save" type="bool" value="true"/>
-      <property name="type" type="int" value="1"/>
     </property>
     <property name="action-15" type="empty">
-      <property name="pattern" type="string" value="^sec(on|off)$"/>
-      <property name="type" type="int" value="1"/>
+      <property name="pattern" type="string" value="yandex"/>
       <property name="save" type="bool" value="true"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/display-toggle.sh \1"/>
+      <property name="command" type="string" value="xdg-open &quot;/home/marko/.local/share/applications/chrome-https___mail.yandex.com_neo2_#inbox.desktop&quot;"/>
     </property>
     <property name="action-16" type="empty">
-      <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^mv([\.0-9\&lt;\&gt;])([\.\&lt;\&gt;])? ?([a-z]+)?$"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/mv.sh \1 \2 \3"/>
+      <property name="command" type="string" value="xdg-open &quot;/home/marko/.local/share/applications/chrome-https___vk.com_id188638108.desktop&quot;"/>
+      <property name="pattern" type="string" value="vk"/>
       <property name="save" type="bool" value="true"/>
     </property>
     <property name="action-17" type="empty">
-      <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^buzz([0-9a-z]+) ?(.*)?$"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/buzz.sh \1 &quot;\2&quot;"/>
-      <property name="save" type="bool" value="false"/>
-    </property>
-    <property name="action-1" type="empty">
-      <property name="type" type="int" value="1"/>
-      <property name="pattern" type="string" value="^msrv(on|off)$"/>
+      <property name="command" type="string" value="xdg-open &quot;/home/marko/.local/share/applications/chrome-https___www.youtube.com_.desktop&quot;"/>
+      <property name="pattern" type="string" value="youtube"/>
       <property name="save" type="bool" value="true"/>
-      <property name="command" type="string" value="/home/marko/.dotfiles/scripts/mount-server.sh \1"/>
+    </property>
+    <property name="action-18" type="empty">
+      <property name="command" type="string" value="xdg-open &quot;/home/marko/.local/share/applications/chrome-http___www.reddit.com_.desktop&quot;"/>
+      <property name="pattern" type="string" value="reddit"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-20" type="empty">
+      <property name="pattern" type="string" value="ttab"/>
+      <property name="command" type="string" value="xfce4-terminal --tab"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-21" type="empty">
+      <property name="pattern" type="string" value="xtop"/>
+      <property name="command" type="string" value="xfce4-taskmanager"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-22" type="empty">
+      <property name="pattern" type="string" value="^dim(on|off)$"/>
+      <property name="type" type="int" value="1"/>
+      <property name="command" type="string" value="/home/marko/.scripts/scripts/display-dim.sh \1"/>
+      <property name="save" type="bool" value="true"/>
+    </property>
+    <property name="action-19" type="empty">
+      <property name="pattern" type="string" value="translate"/>
+      <property name="command" type="string" value="xdg-open &quot;/home/marko/.local/share/applications/chrome-https___translate.yandex.com_.desktop&quot;"/>
+      <property name="save" type="bool" value="true"/>
     </property>
   </property>
+  <property name="last" type="empty">
+    <property name="window-height" type="int" value="853"/>
+    <property name="window-width" type="int" value="261"/>
+    <property name="pane-position" type="int" value="180"/>
+  </property>
   <property name="always-center" type="bool" value="true"/>
-  <property name="enable-service" type="bool" value="true"/>
 </channel>
