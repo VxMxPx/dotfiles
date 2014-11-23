@@ -4,7 +4,7 @@ style "panel"
   bg[ACTIVE]      = "#414140"
   bg[SELECTED]    = "#414140"
   bg[PRELIGHT]    = "#414140"
-  bg[INSENSITIVE] = "#414140" 
+  bg[INSENSITIVE] = "#414140"
 
   base[NORMAL]      = "#414140"
   base[ACTIVE]      = "#414140"
@@ -16,15 +16,19 @@ style "panel"
   fg[SELECTED] = "#eeeeee"
   fg[ACTIVE]   = "#eeeeee"
   fg[PRELIGHT]    = "#eeeeee"
-  fg[INSENSITIVE] = "#eeeeee" 
+  fg[INSENSITIVE] = "#eeeeee"
 
   text[NORMAL]   = "#cccccc"
   text[SELECTED] = "#eeeeee"
   text[ACTIVE]   = "#eeeeee"
   text[PRELIGHT]    = "#eeeeee"
-  text[INSENSITIVE] = "#eeeeee" 
+  text[INSENSITIVE] = "#eeeeee"
 
-  font_name    = "Ubuntu Condensed, 10"
+    engine "murrine" {
+		textstyle		= 0
+	}
+
+  font_name    = "Ubuntu, 10"
 }
 
 widget_class "*Panel*"      style "panel"

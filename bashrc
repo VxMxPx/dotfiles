@@ -19,7 +19,8 @@ alias mysli='cd ~/Projects/mysli.dev/code'
 alias vbox='sudo modprobe -a vboxdrv vboxnetflt vboxnetadp'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias upme='yaourt -Syua'
+#alias upme='yaourt -Syua'
+alias upme='yaourt -Syua; sudo paccache -r; sudo paccache -ruk0'
 alias net-access='/home/marko/.scripts/scripts/net-access.sh'
 alias ssh-server='ssh marko@mystic-server'
 alias yesno='~/.scripts/scripts/yesno.py'
@@ -31,7 +32,8 @@ alias giaa='git add --all'
 alias gia='git add'
 alias gis='git status'
 alias gid='git diff'
-alias phpt='/home/marko/Projects/phpt/run-tests.php --show-diff'
+#alias phpt='/home/marko/Projects/phpt/run-tests.php --show-diff'
+alias phpt='/home/marko/Projects/mysli.dev/code/private/dot phpt -t'
 alias tflix='pirate-get --color -p 2 --custom "peerflix %s && smplayer http://192.168.1.180:8888"'
 
 # PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;37m\]\w\[\033[00m\]\[\033[01;30m\])\[\033[00m\]\n\[\033[01;30m\]➜\[\033[00m\] '
@@ -39,7 +41,6 @@ PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;3
 
 export EDITOR="nano"
 export HISTCONTROL=ignorespace
-export TEST_PHP_EXECUTABLE=$(which php)
 
 # Make new tabs inherit current directory in Gnome Terminal
 source /etc/profile.d/vte.sh
