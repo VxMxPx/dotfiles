@@ -23,5 +23,5 @@ fi
 
 sleep $timeout
 
-[[ "x$message" != "x" ]] && notify-send "$message";
+[[ "x$message" != "x" ]] && notify-send -i /home/marko/.icons/Matrilineare/status/48/dialog-information.svg "Alert" "$message";
 mpg123 -q $(dirname $0)/buzz.mp3

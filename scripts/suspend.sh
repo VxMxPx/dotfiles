@@ -1,4 +1,4 @@
 #!/bin/bash
 
-xflock4
+# xflock4
 xfce4-session-logout -s
