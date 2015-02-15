@@ -22,7 +22,7 @@ function getScreenSettings () {
         # Set the LEFT screen
         screen[width]=1680
         screen[height]=1050
-        screen[padding_bottom]=24
+        screen[padding_top]=26
         screen[padding_left]=0
     else
         # Set the RIGHT screen
@@ -203,6 +203,6 @@ function selfRun() {
 selfRun $1 $2
 
 # Repeat command if we're in terminal
-[[ $(xdotool getactivewindow getwindowname | grep -E "Terminal - ") != ""  ]] && selfRun $1 $2;
+[[ $(xprop -id $(xdotool getactivewindow) | grep WM_CLASS | grep -E "terminal") != "" ]] && selfRun $1 $2;
 
 exit 0
