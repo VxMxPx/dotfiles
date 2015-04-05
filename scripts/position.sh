@@ -10,7 +10,7 @@ function getScreenSettings () {
         [width]=0          # Screen width
         [height]=0         # Screen height
         [top]=0            # Actual position of screen (from top)
-        [left]=0           # Actual position of screen (from left)
+        [left]=2           # Actual position of screen (from left)
         [padding_top]=0    # Padding top (for example if there's panel on top)
         [padding_right]=0  # Padding right
         [padding_bottom]=0 # Padding bottom
@@ -28,7 +28,7 @@ function getScreenSettings () {
         # Set the RIGHT screen
         screen[width]=1920
         screen[height]=1080
-        screen[left]=1680
+        screen[left]=1682
         screen[top]=0
     fi
 
@@ -59,7 +59,7 @@ function getPostionCords() {
     if [[ $1 == "top" ]]; then
         echo $(( ${screen[top]} + ${screen[padding_top]} ))
     elif [[ $1 == "bottom" ]]; then
-        echo $(( (${screen[usable_height]} / 2) + ${screen[padding_top]} ));
+        echo $(( (${screen[usable_height]} / 2) + ${screen[padding_top]} + ${screen[decoration_height]} - 2 ));
     elif [[ $1 == "left" ]]; then
         echo $(( ${screen[left]} + ${screen[padding_left]} ))
     elif [[ $1 == "right" ]]; then
