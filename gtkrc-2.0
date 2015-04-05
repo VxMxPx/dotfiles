@@ -24,11 +24,14 @@ style "panel"
   text[PRELIGHT]    = "#eeeeee"
   text[INSENSITIVE] = "#eeeeee"
 
+  GtkTreeView::even_row_color = "#414140"
+  GtkTreeView::odd_row_color = "#414140"
+
     engine "murrine" {
 		textstyle		= 0
 	}
 
-  font_name    = "Ubuntu, 10"
+  font_name    = "Roboto, 10"
 }
 
 widget_class "*Panel*"      style "panel"
