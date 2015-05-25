@@ -10,7 +10,7 @@ function getScreenSettings () {
         [width]=0          # Screen width
         [height]=0         # Screen height
         [top]=0            # Actual position of screen (from top)
-        [left]=2           # Actual position of screen (from left)
+        [left]=0           # Actual position of screen (from left)
         [padding_top]=0    # Padding top (for example if there's panel on top)
         [padding_right]=0  # Padding right
         [padding_bottom]=0 # Padding bottom
@@ -22,13 +22,13 @@ function getScreenSettings () {
         # Set the LEFT screen
         screen[width]=1680
         screen[height]=1050
-        screen[padding_top]=26
+        screen[padding_top]=28
         screen[padding_left]=0
     else
         # Set the RIGHT screen
         screen[width]=1920
         screen[height]=1080
-        screen[left]=1682
+        screen[left]=1680
         screen[top]=0
     fi
 
