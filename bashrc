@@ -14,8 +14,11 @@ alias l='ls -CF'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias phpunit='phpunit --colors'
+#alias php='~/.php7/php-src/sapi/cli/php'
 alias php-server='php -S localhost:8000'
-alias mysli='cd ~/Projects/mysli.dev/code'
+#alias mysli='cd ~/Projects/mysli.dev/code'
+alias php7='~/.php7/php-src/sapi/cli/php'
+alias php7-server="~/.php7/php-src/sapi/cli/php -S localhost:8000"
 alias vbox='sudo modprobe -a vboxdrv vboxnetflt vboxnetadp'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -37,7 +40,8 @@ alias phpt='/home/marko/Projects/mysli.dev/code/private/dot phpt -t'
 alias tflix='pirate-get --color -p 2 --custom "peerflix %s && smplayer http://192.168.1.180:8888"'
 
 # PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;37m\]\w\[\033[00m\]\[\033[01;30m\])\[\033[00m\]\n\[\033[01;30m\]➜\[\033[00m\] '
-PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;37m\]\w\[\033[00m\]\[\033[01;30m\])\[\033[00m\]\n\[\033[01;30m\]➜\[\033[00m\] '
+# PS1='\n${debian_chroot:+($debian_chroot)}\[\033[01;30m\](\[\033[00m\]\[\033[00;37m\]\w\[\033[00m\]\[\033[01;30m\])\[\033[00m\]\n\[\033[01;30m\]➜\[\033[00m\] '
+PS1='\n${debian_chroot:+($debian_chroot)}\[\e[38;5;246m\](\w)\[\e[0m\]\n\[\e[38;5;240m\]›\[\e[0m\] '
 
 export EDITOR="nano"
 export HISTCONTROL=ignorespace
