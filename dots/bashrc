@@ -36,16 +36,15 @@ alias youtube-audio='youtube-dl -x --audio-format=mp3'
 
 ## Other:
 alias php-server='php_server'
-alias gify='/home/marko/.scripts/scripts/gify.sh'
+alias gify='~/.resources/scripts/self/gify.sh'
 alias extip='wget -O - -q icanhazip.com'
-alias yesno='~/.scripts/scripts/yesno.py'
-alias wiof="~/.scripts/scripts/whichof.php"
+alias yesno='~/.resources/scripts/self/yesno.py'
+alias wiof="~/.resources/scripts/self/whichof.php"
 alias vbox='sudo modprobe -a vboxdrv vboxnetflt vboxnetadp'
 alias upme="yaourt -Syua; sudo paccache -r; sudo paccache -ruk0"
-alias net-access='/home/marko/.scripts/scripts/net-access.sh'
-alias backup='~/.scripts/backup.sh'
+# alias net-access='/home/marko/.scripts/scripts/net-access.sh'
+alias backup='~/.resources/backup.sh'
 alias randomfile='tree -f --noreport -i | shuf -n 1'
-alias bsum='~/.scripts/js/budget.js'
 
 ## Radios:
 alias ra-maxi='mplayer -playlist http://www.radiomaxi.si/live/RadioMaxiLive.pls'

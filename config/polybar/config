@@ -76,27 +76,27 @@ label-margin-left = 120
 
 [module/skype]
 type = custom/script
-exec = ~/.scripts/polybar/skype.sh
+exec = ~/.resources/scripts/polybar/self/skype.sh
 interval = 10
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 
-click-left = ~/.scripts/scripts/to.sh Skype
+click-left = ~/.resources/scripts/self/to.sh Skype
 
 [module/mail]
 type = custom/script
-exec = ~/.scripts/polybar/mail.sh
+exec = ~/.resources/scripts/polybar/self/mail.sh
 interval = 10
 
 format-prefix = " "
 format-prefix-foreground = "#FFDA3E"
 
-click-left = ~/.scripts/scripts/to.sh Yandex.Mail
+click-left = ~/.resources/scripts/self/to.sh Yandex.Mail
 
 [module/updates-arch]
 type = custom/script
-exec = ~/.scripts/polybar-scripts/updates-arch/updates-arch.sh
+exec = ~/.resources/scripts/polybar/external/updates-arch/updates-arch.sh
 interval = 600
 
 format-prefix = " "
@@ -118,7 +118,7 @@ format-prefix-foreground = ${colors.foreground-alt}
 
 [module/openweathermap-simple]
 type = custom/script
-exec = ~/.scripts/polybar-scripts/openweathermap-simple/openweathermap-simple.sh
+exec = ~/.resources/scripts/polybar/external/openweathermap-simple/openweathermap-simple.sh
 interval = 600
 label-font = 5
 

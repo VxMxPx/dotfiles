@@ -1,10 +1,8 @@
 #!/bin/bash
 
-git add --all
-git commit "Commit before backup"
-git push
-
 RESDIR=~/.resources
+
+cd $RESDIR
 
 # Copy dot files and sync
 cp ~/.bashrc $RESDIR/dots/bashrc
@@ -14,6 +12,7 @@ cp ~/.gtkrc-2.0 $RESDIR/dots/gtkrc-2.0
 cp ~/.xinitrc $RESDIR/dots/xinitrc
 cp ~/.Xresources $RESDIR/dots/Xresources
 cp ~/.conkyrc $RESDIR/dots/conkyrc
+cp /etc/nanorc $RESDIR/dots/nanorc
 
 # Copy config
 mkdir -p $RESDIR/config/xfce4/xfconf
