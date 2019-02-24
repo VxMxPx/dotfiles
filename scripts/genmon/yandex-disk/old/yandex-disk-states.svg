@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="1280px"
+   height="1280px"
+   viewBox="0 -247.758 1280 1280"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="yandex-disk-states.svg"
+   inkscape:export-filename="/home/marko/.scripts/genmon/yandex-disk/yandex-disk-.png"
+   inkscape:export-xdpi="1.2656255"
+   inkscape:export-ydpi="1.2656255">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Yandex.Disk SVG Logo - free.arinco.org</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1012"
+     id="namedview13"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="0.2655"
+     inkscape:cx="-275.11613"
+     inkscape:cy="186.36116"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4150" />
+  <title
+     id="title4">Yandex.Disk SVG Logo - free.arinco.org</title>
+  <desc
+     id="desc6">UFOをモチーフにしたヤンデックスディスクのロゴ</desc>
+  <defs
+     id="defs8">
+    <style
+       id="style10">
+#yandex-ufo {
+fill:#516AB5; 
+}
+#yandex-ufo:hover {
+fill:blue; 
+}
+</style>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="background"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#323232;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4145"
+       width="1280"
+       height="1280"
+       x="0"
+       y="-247.758"
+       rx="1.05076"
+       ry="0.37071401" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="yande-disk-normal"
+     sodipodi:insensitive="true">
+    <path
+       inkscape:connector-curvature="0"
+       id="yandex-ufo"
+       d="m 22.458,556.75998 c -9.823,10.462 -17.168,19.448 -22.458,26.626 5.998,-8.043 13.667,-17.03 22.458,-26.626 z m 1216.276,-304.131 c 3.422,1.612 6.902,3.196 9.734,4.837 -2.163,-1.258 -5.605,-2.969 -9.734,-4.837 z m -657.749,28.357 c 363.047,-97.883 557.909,-63.085 633.423,-37.796 -83.025,-27.993 -245.638,-50.588 -329.018,-99.299 C 805.688,97.332986 720.912,-43.596014 509.709,13.333986 298.545,70.264986 298.034,229.94498 249.216,315.42898 c -39.979,70.106 -163.83,172.601 -226.758,241.291 59.771,-63.754 211.871,-182.236 558.527,-275.734 z M 690.608,73.459986 c 19.861,-5.349 51.148,0.963 75.75,18.239 34.964,24.511994 45.466,61.826994 7.453,72.071994 -38.053,10.246 -86.743,-16.725 -101.885,-46.586 -10.658,-21.080994 -1.14,-38.404994 18.682,-43.724994 z M 535.136,100.19498 c 32.536,-8.730994 64.826,6.421 72.171,33.932 7.306,27.453 -13.117,56.862 -45.652,65.603 -32.546,8.761 -64.826,-6.381 -72.181,-33.893 -7.306,-27.452 13.117,-56.842 45.662,-65.642 z m -204.468,108.945 c 12.763,-27.354 36.695,-48.534 56.518,-53.912 19.813,-5.339 36.695,4.867 37.914,28.456 1.741,33.48 -27.029,81.325 -65.082,91.6 -37.982,10.245 -47.422,-27.326 -29.35,-66.144 z m 947.533,142.473 c -25.604,-96.821 -324.927,-91.03 -671.159,2.861 -346.155,93.891 -608.261,240.318 -582.588,337.109 17.335,65.505 165.128,102.593 366.017,90.695 83.96,7.061 196.435,-5.054 316.381,-37.402 118.227,-31.857 220.485,-77.067 289.667,-124.599 185.598,-92.425 299.342,-202 281.682,-268.664 z m -583.483,347.6 c -150.594,40.609 -278.536,51.661 -288.653,13.569 -10.147,-38.052 104.166,-100.096 254.79,-140.684 150.576,-40.648 280.464,-44.325 290.631,-6.254 10.147,38.033 -106.192,92.781 -256.768,133.369 z"
+       style="fill:#ffffff;fill-opacity:0.54901961" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="yande-disk-error"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#c21d1d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4160"
+       width="475.19302"
+       height="475.19302"
+       x="764.80652"
+       y="309.29068"
+       rx="47.519302"
+       ry="47.519302" />
+    <text
+       xml:space="preserve"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:14px;line-height:125%;font-family:'PT Sans Narrow';-inkscape-font-specification:'PT Sans Narrow Condensed';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#4d3e41;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker:none;enable-background:accumulate"
+       x="915.56299"
+       y="726.02722"
+       id="text4162"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4164"
+         x="915.56299"
+         y="726.02722"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:520px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans Bold';fill:#ffffff;fill-opacity:1">!</tspan></text>
+  </g>
+  <g
+     style="display:none"
+     inkscape:label="yande-disk-index"
+     id="g4150"
+     inkscape:groupmode="layer">
+    <rect
+       ry="47.519302"
+       rx="47.519302"
+       y="309.29068"
+       x="764.80652"
+       height="475.19302"
+       width="475.19302"
+       id="rect4152"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#2489de;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4154"
+       y="732.52722"
+       x="865.38306"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:14px;line-height:125%;font-family:'PT Sans Narrow';-inkscape-font-specification:'PT Sans Narrow Condensed';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#4d3e41;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker:none;enable-background:accumulate"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:520px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans Bold';fill:#ffffff;fill-opacity:1"
+         y="732.52722"
+         x="865.38306"
+         id="tspan4156"
+         sodipodi:role="line">~</tspan></text>
+  </g>
+  <g
+     inkscape:label="yande-disk-busy"
+     id="g4166"
+     inkscape:groupmode="layer"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       ry="47.519302"
+       rx="47.519302"
+       y="309.29068"
+       x="764.80652"
+       height="475.19302"
+       width="475.19302"
+       id="rect4168"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#3c7f13;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <path
+       id="path4198"
+       d="m 1131.2616,528.59537 c 5.6374,38.79445 -6.2009,79.65065 -36.465,109.46986 -44.7138,44.12044 -113.69772,49.54993 -164.43447,16.40761 l 35.5454,-34.65528 -130.64043,-18.21776 18.23295,127.58366 39.89202,-38.21576 c 71.64005,52.8137 173.24693,47.82903 238.34423,-16.40761 37.741,-37.23686 54.95,-86.66763 52.8137,-135.44613 l -53.2884,-10.51859 z M 910.03705,455.7685 c 44.69866,-44.12044 113.66835,-49.57984 164.40505,-16.40761 l -35.6047,34.64055 130.6399,18.23248 -18.2177,-127.64299 -39.8479,38.30501 c -71.6543,-52.85833 -173.23172,-47.81432 -238.34424,16.40761 -37.74102,37.22167 -54.93478,86.65291 -52.81369,135.41668 l 53.28842,10.5034 c -5.63741,-38.80916 6.23083,-79.62121 36.49486,-109.45513 z"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+  </g>
+  <g
+     style="display:none"
+     inkscape:label="yande-disk-"
+     id="g4153"
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
+    <rect
+       ry="47.519302"
+       rx="47.519302"
+       y="309.29068"
+       x="764.80652"
+       height="475.19302"
+       width="475.19302"
+       id="rect4155"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#b96d1c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4157"
+       y="729.66718"
+       x="884.62299"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:14px;line-height:125%;font-family:'PT Sans Narrow';-inkscape-font-specification:'PT Sans Narrow Condensed';text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#4d3e41;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker:none;enable-background:accumulate"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:520px;font-family:'PT Sans';-inkscape-font-specification:'PT Sans Bold';fill:#ffffff;fill-opacity:1"
+         y="729.66718"
+         x="884.62299"
+         id="tspan4159"
+         sodipodi:role="line">?</tspan></text>
+  </g>
+</svg>

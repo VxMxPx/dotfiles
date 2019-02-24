@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="32"
+   height="32"
+   viewBox="0 -247.758 32 32"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="yandex-disk-no internet access.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Yandex.Disk SVG Logo - free.arinco.org</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#1d1d1d"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2106"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="43.766258"
+     inkscape:cx="5.5573507"
+     inkscape:cy="11.539941"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true" />
+  <title
+     id="title4">Yandex.Disk SVG Logo - free.arinco.org</title>
+  <desc
+     id="desc6">UFOをモチーフにしたヤンデックスディスクのロゴ</desc>
+  <defs
+     id="defs8">
+    <style
+       id="style10">
+#yandex-ufo {
+fill:#516AB5; 
+}
+#yandex-ufo:hover {
+fill:blue; 
+}
+</style>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Default"
+     style="display:inline"
+     transform="translate(0,16)">
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1"
+       d="m 0.56146,-242.56373 c -0.24558,0.2667 -0.4292,0.4958 -0.56146,0.6788 0.15,-0.20504 0.34168,-0.43414 0.56146,-0.6788 z m 30.406896,-7.75364 c 0.0856,0.0412 0.1726,0.0816 0.24336,0.1234 -0.054,-0.032 -0.1402,-0.0756 -0.24336,-0.1234 z m -16.443718,0.72294 c 9.07616,-2.49544 13.947718,-1.6083 15.835578,-0.96358 -2.07564,-0.71364 -6.140958,-1.2897 -8.225458,-2.53156 -1.99256,-1.18696 -4.11196,-4.77984 -9.39204,-3.32848 -5.2790988,1.45142 -5.2918588,5.52236 -6.5123188,7.70172 -0.9994798,1.78734 -4.0957394,4.40036 -5.6689392,6.15158 1.4942598,-1.62538 5.2967594,-4.64598 13.963178,-7.02968 z m 2.74056,-5.29074 c 0.49654,-0.1364 1.2787,0.0244 1.89376,0.465 0.8741,0.62494 1.13664,1.57622 0.1864,1.83744 -0.95132,0.2612 -2.16858,-0.42642 -2.54712,-1.18768 -0.26646,-0.53746 -0.0284,-0.97912 0.46704,-1.11476 z m -3.8868,0.68162 c 0.8134,-0.2226 1.62066,0.1638 1.80428,0.86506 0.1826,0.6999 -0.32792,1.44966 -1.1413,1.6725 -0.81366,0.22338 -1.620659,-0.1628 -1.804519,-0.86408 -0.1826,-0.69988 0.32792,-1.44914 1.141539,-1.67348 z m -5.1116986,2.77748 c 0.31908,-0.6974 0.91738,-1.23738 1.41296,-1.37446 0.4953196,-0.136 0.9173596,0.124 0.9478396,0.72546 0.0436,0.85356 -0.6757196,2.07332 -1.6270396,2.33528 -0.9495604,0.2612 -1.1855604,-0.69666 -0.73376,-1.68628 z m 23.6883366,3.63224 c -0.6401,-2.46838 -8.123178,-2.32074 -16.778978,0.073 -8.6538788,2.3937 -15.206538,6.12676 -14.564698,8.5944 0.4333599,1.66998 4.1281994,2.61554 9.1504194,2.3122 2.0989996,0.1802 4.9108786,-0.1288 7.9095186,-0.95356 2.95568,-0.81214 5.51214,-1.96476 7.24168,-3.17656 4.639958,-2.3563 7.483558,-5.14986 7.042058,-6.84942 z m -14.587078,8.86184 c -3.76486,1.03532 -6.963399,1.31708 -7.216339,0.34596 -0.2536596,-0.97012 2.604159,-2.55192 6.369759,-3.58668 3.7644,-1.0363 7.0116,-1.13004 7.26578,-0.1594 0.25368,0.9696 -2.6548,2.36536 -6.4192,3.40014 z"
+       id="path4140"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="yandex-ufo-3"
+       d="m 0.56146,-243.56373 c -0.24558,0.2667 -0.4292,0.4958 -0.56146,0.6788 0.15,-0.20504 0.34168,-0.43414 0.56146,-0.6788 z m 30.406896,-7.75364 c 0.0856,0.0412 0.1726,0.0816 0.24336,0.1234 -0.054,-0.032 -0.1402,-0.0756 -0.24336,-0.1234 z m -16.443718,0.72294 c 9.07616,-2.49544 13.947718,-1.6083 15.835578,-0.96358 -2.07564,-0.71364 -6.140958,-1.2897 -8.225458,-2.53156 -1.99256,-1.18696 -4.11196,-4.77984 -9.39204,-3.32848 -5.2790988,1.45142 -5.2918588,5.52236 -6.5123188,7.70172 -0.9994798,1.78734 -4.0957394,4.40036 -5.6689392,6.15158 1.4942598,-1.62538 5.2967594,-4.64598 13.963178,-7.02968 z m 2.74056,-5.29074 c 0.49654,-0.1364 1.2787,0.0244 1.89376,0.465 0.8741,0.62494 1.13664,1.57622 0.1864,1.83744 -0.95132,0.2612 -2.16858,-0.42642 -2.54712,-1.18768 -0.26646,-0.53746 -0.0284,-0.97912 0.46704,-1.11476 z m -3.8868,0.68162 c 0.8134,-0.2226 1.62066,0.1638 1.80428,0.86506 0.1826,0.6999 -0.32792,1.44966 -1.1413,1.6725 -0.81366,0.22338 -1.620659,-0.1628 -1.804519,-0.86408 -0.1826,-0.69988 0.32792,-1.44914 1.141539,-1.67348 z m -5.1116986,2.77748 c 0.31908,-0.6974 0.91738,-1.23738 1.41296,-1.37446 0.4953196,-0.136 0.9173596,0.124 0.9478396,0.72546 0.0436,0.85356 -0.6757196,2.07332 -1.6270396,2.33528 -0.9495604,0.2612 -1.1855604,-0.69666 -0.73376,-1.68628 z m 23.6883366,3.63224 c -0.6401,-2.46838 -8.123178,-2.32074 -16.778978,0.073 -8.6538788,2.3937 -15.206538,6.12676 -14.564698,8.5944 0.4333599,1.66998 4.1281994,2.61554 9.1504194,2.3122 2.0989996,0.1802 4.9108786,-0.1288 7.9095186,-0.95356 2.95568,-0.81214 5.51214,-1.96476 7.24168,-3.17656 4.639958,-2.3563 7.483558,-5.14986 7.042058,-6.84942 z m -14.587078,8.86184 c -3.76486,1.03532 -6.963399,1.31708 -7.216339,0.34596 -0.2536596,-0.97012 2.604159,-2.55192 6.369759,-3.58668 3.7644,-1.0363 7.0116,-1.13004 7.26578,-0.1594 0.25368,0.9696 -2.6548,2.36536 -6.4192,3.40014 z"
+       style="display:inline;fill:#aaaaaa;fill-opacity:1" />
+    <g
+       id="g8142"
+       transform="matrix(2,0,0,2,5e-7,231.758)">
+      <rect
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#c60a0a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         id="rect4168"
+         width="8"
+         height="8"
+         x="7.9999995"
+         y="-239.758"
+         rx="0.80000001"
+         ry="0.80000001" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4150"
+         d="m 15.011599,-238.79024 -4.338415,2.3846 3.422055,0.87293 -5.1068388,2.80695"
+         style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+# GIMP gimp-rect-select-tool options
+
+(aspect-denominator 6.000000)
+(aspect-numerator 6.000000)
+(operation subtract)
+
+# end of gimp-rect-select-tool options

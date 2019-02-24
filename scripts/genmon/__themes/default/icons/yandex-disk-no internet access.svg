@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="16"
+   height="16"
+   viewBox="0 -247.758 16 16"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icon-no internet connection.svg">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Yandex.Disk SVG Logo - free.arinco.org</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#1d1d1d"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1012"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="43.766258"
+     inkscape:cx="2.3699638"
+     inkscape:cy="6.6046314"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true" />
+  <title
+     id="title4">Yandex.Disk SVG Logo - free.arinco.org</title>
+  <desc
+     id="desc6">UFOをモチーフにしたヤンデックスディスクのロゴ</desc>
+  <defs
+     id="defs8">
+    <style
+       id="style10">
+#yandex-ufo {
+fill:#516AB5; 
+}
+#yandex-ufo:hover {
+fill:blue; 
+}
+</style>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Default"
+     style="display:inline">
+    <path
+       inkscape:connector-curvature="0"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#bebebe;fill-opacity:0.35294118;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 7.21875,-246.53572 c -0.3476453,0.017 -0.7143701,0.0716 -1.1015625,0.17383 l -0.00195,0 c -3.0852867,0.81432 -3.5246361,3.57963 -3.8632813,4.16016 -0.130496,0.22403 -0.6075621,0.75579 -1.1386719,1.26562 -0.52536178,0.50432 -1.09947631,1.01839 -1.54492182,1.49219 -0.001747,0.002 -0.008027,0.004 -0.009766,0.006 l 0.001953,0.002 c -0.002575,0.003 -0.0072,0.005 -0.009766,0.008 l 0.56054687,0.53125 c -0.0468409,0.0459 -0.0984833,0.0896 -0.14258035,0.13672 -0.44527349,0.47617 -0.838094,1.15369 -0.62890625,1.92578 0.14137344,0.523 0.51022568,0.88004 0.88671875,1.11719 0.37649302,0.23715 0.7964316,0.38872 1.2695313,0.50391 0.9188401,0.22371 2.0617504,0.28713 3.34375,0.2207 1.2084624,0.094 2.6769908,-0.0692 4.25,-0.48437 1.5495592,-0.40874 2.8860912,-0.97912 3.8828122,-1.64258 1.183741,-0.58545 2.173893,-1.21882 2.88086,-1.88086 0.363056,-0.33998 0.661038,-0.68526 0.875,-1.08399 0.213961,-0.39873 0.35877,-0.89976 0.214843,-1.43164 -0.208581,-0.77218 -0.885837,-1.16034 -1.509765,-1.35156 -0.04711,-0.0144 -0.09837,-0.0222 -0.146485,-0.0352 l 0.207032,-0.6289 -0.002,0 c -0.627077,-0.2068 -1.388461,-0.35495 -2.13086,-0.53516 -0.742992,-0.18035 -1.461058,-0.40757 -1.796828,-0.59961 -0.379972,-0.21729 -1.512344,-1.52212 -3.361328,-1.8164 -0.308164,-0.049 -0.6367297,-0.0697 -0.984375,-0.0527 z m 6.076172,5.42184 c 0.69503,-0.006 1.249863,0.0654 1.552734,0.1582 0.04635,0.0142 0.04864,0.007 0.05469,0.002 -0.07573,0.12155 -0.196731,0.28879 -0.416016,0.49414 -0.396944,0.37171 -1.015005,0.80643 -1.783205,1.23243 -0.237637,-0.38475 -0.625145,-0.55155 -0.90625,-0.62696 -0.352798,-0.0946 -0.696993,-0.11246 -1.083984,-0.10351 -0.7739833,0.0179 -1.704461,0.16864 -2.7070316,0.43359 -1.0025831,0.2645 -1.8841192,0.59317 -2.5644532,0.95899 -0.3401668,0.18291 -0.6308264,0.36524 -0.890625,0.62304 -0.2036072,0.20204 -0.4550828,0.53723 -0.4746093,0.98047 -0.8580124,0.005 -1.5924057,-0.0699 -2.1074219,-0.19531 -0.2794556,-0.068 -0.4574729,-0.14709 -0.5800781,-0.21289 0.00632,0.003 0.010061,0.008 0.041016,-0.0254 0.2139977,-0.22885 0.6590867,-0.56548 1.2636719,-0.9043 1.2091703,-0.67763 3.05104,-1.39761 5.1503906,-1.95508 2.0998043,-0.55745 4.0611116,-0.84724 5.4511716,-0.85937 z"
+       id="path4193-3"
+       sodipodi:nodetypes="ccccscccccccsscccsscccccscccccccsccscssccccsccc" />
+    <path
+       style="fill:none;fill-opacity:0.11891892;stroke:#bebebe;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 4.133352,-242.99859 0,-5e-5 c 0.159537,-0.33475 2.4008224,-1.1423 2.6486104,-1.20812 0.247663,-0.0652 3.005162,-0.32307 3.020399,-0.0344"
+       id="path4187"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;fill-opacity:0.11891892;stroke:#bebebe;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 11.52998,-238.1097 c 2.319973,-1.13103 4.668286,-2.32967 4.447538,-3.14544 -0.320051,-1.18484 -4.06159,-1.11397 -8.38949,0.035 -4.326939,1.14899 -7.603265,2.94088 -7.282352,4.12533 0.216687,0.80162 2.7627621,0.67193 5.2738771,0.52633"
+       id="path4185"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;fill-opacity:0.11891892;stroke:#bebebe;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 8.683979,-237.00142 c -1.882428,0.49696 -3.481702,0.6322 -3.608165,0.16604 -0.126836,-0.46565 1.302075,-1.2249 3.184876,-1.72161 1.882201,-0.49742 3.5058,-0.54241 3.63289,-0.0766 0.126836,0.46543 -1.327401,1.13542 -3.209601,1.6321 z"
+       id="yandex-ufo"
+       inkscape:connector-curvature="0" />
+    <rect
+       ry="0.80000001"
+       rx="0.80000001"
+       y="-239.758"
+       x="7.9999995"
+       height="8"
+       width="8"
+       id="rect4168"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.98999999;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#c60a0a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 15.011599,-238.79024 -4.338415,2.3846 3.422055,0.87293 -5.1068388,2.80695"
+       id="path4150"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

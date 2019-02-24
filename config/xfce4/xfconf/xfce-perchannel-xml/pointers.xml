@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="pointers" version="1.0">
+  <property name="SYNA781300_06CB1785" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="ReverseScrolling" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="3"/>
+    <property name="Acceleration" type="double" value="3.000000"/>
+  </property>
+  <property name="SYNA2B3100_06CB7F8C_Touchpad" type="empty">
+    <property name="RightHanded" type="bool" value="true"/>
+    <property name="ReverseScrolling" type="bool" value="true"/>
+    <property name="Threshold" type="int" value="1"/>
+    <property name="Acceleration" type="double" value="6.000000"/>
+  </property>
+</channel>

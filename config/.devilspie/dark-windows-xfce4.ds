@@ -1,0 +1,4 @@
+(if
+  (matches (window_class) "Xfce4-appfinder")
+    (spawn_async 
+      (str "xprop -f _GTK_THEME_VARIANT 8u -set _GTK_THEME_VARIANT dark -id " (window_xid))))

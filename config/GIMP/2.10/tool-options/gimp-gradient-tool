@@ -1,0 +1,11 @@
+# GIMP gimp-gradient-tool options
+
+(foreground (color-rgb 0.568966 0.326737 0.087827))
+(gradient "Custom")
+(brush-size 51.000000)
+(brush-hardness 0.500000)
+(gradient-blend-color-space cie-lab)
+(gradient-type shapeburst-angular)
+(distance-metric chebyshev)
+
+# end of gimp-gradient-tool options

@@ -1,0 +1,241 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;==========================================================
+
+[colors]
+;background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7}
+background = ${xrdb:color0}
+;background = #353231
+background-alt = #444
+;foreground = ${xrdb:color7:#222}
+;foreground = #dfdfdf
+foreground-alt = #888
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+[bar/default]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 30
+; offset-x = 0
+; offset-y = 0
+radius = 0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 2
+border-color = ${colors.background}
+
+padding-left = 0
+padding-right = 4
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = "Fira Sans:style=Regular:pixelsize=10;1"
+font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=12"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12"
+font-3 = "Font Awesome 5 Brands:pixelsize=12"
+font-4 = "Weather Icons:size=12;1"
+
+modules-left = xworkspaces
+modules-center = title
+modules-right = wlan updates-arch battery skype mail openweathermap-simple keyboard date time pulseaudio
+
+tray-position = none
+tray-padding = 2
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/title]
+type = internal/xwindow
+label-maxlen = 100
+label-margin-left = 120
+
+[module/skype]
+type = custom/script
+exec = ~/.scripts/polybar/skype.sh
+interval = 10
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+click-left = ~/.scripts/scripts/to.sh Skype
+
+[module/mail]
+type = custom/script
+exec = ~/.scripts/polybar/mail.sh
+interval = 10
+
+format-prefix = " "
+format-prefix-foreground = "#FFDA3E"
+
+click-left = ~/.scripts/scripts/to.sh Yandex.Mail
+
+[module/updates-arch]
+type = custom/script
+exec = ~/.scripts/polybar-scripts/updates-arch/updates-arch.sh
+interval = 600
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+click-left = xterm -e yaourt -Syua; sudo paccache -r; sudo paccache -ruk0
+
+[module/keyboard]
+type = internal/xkeyboard
+
+; List of indicators to ignore
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+label-layout = %layout%
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+[module/openweathermap-simple]
+type = custom/script
+exec = ~/.scripts/polybar-scripts/openweathermap-simple/openweathermap-simple.sh
+interval = 600
+label-font = 5
+
+[module/wlan]
+type = internal/network
+interface = wlp1s0
+interval = 3.0
+
+format-connected = %{A1:uxterm -e nmtui-connect:}<ramp-signal> <label-connected>%{A}
+; format-connected-underline = #9f78e1
+label-connected = %essid%
+
+format-disconnected = %{A1:uxterm -e nmtui-connect:}%{A}
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/xworkspaces]
+type = internal/xworkspaces
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+label-active-padding = 4
+label-occupied-padding = 4
+label-urgent-padding = 4
+label-empty-padding = 4
+
+; Create click handler used to focus desktop
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle desktops
+; Default: true
+enable-scroll = false
+
+label-active-background = #333
+
+[module/date]
+type = internal/date
+interval = 60
+
+date = %a %d %b
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+label = %date%
+
+[module/time]
+type = internal/date
+interval = 5
+
+time = %H:%M
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+label = %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = %{A1:pavucontrol:}<ramp-volume>%{A}
+
+label-muted = 
+label-muted-foreground = ${colors.foreground-alt}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP1
+full-at = 98
+
+format-charging = <ramp-capacity> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+label-full = " Fully charged"
+
+format-full-prefix = 
+format-full-prefix-foreground = ${colors.foreground-alt}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini

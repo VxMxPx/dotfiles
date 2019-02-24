@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+      [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+# if [ ! -z "$(pgrep gpg-agent)" ]; then
+#     $GPGAGENT --daemon --enable-ssh-support --sh --write-env-file=$PID_FILE
+# fi
+
+# xset b off && xset s off
+# setterm -blank 0 -powersave off -powerdown 0
+# exec dbus-launch --exit-with-session --sh-syntax startxfce4
+
+# export XDG_CURRENT_DESKTOP=GNOME

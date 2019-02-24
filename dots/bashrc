@@ -1,0 +1,87 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Aliases
+
+## Navigating:
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ssh-gajst='ssh marko@gaj.st'
+
+## Mounting:
+#alias mnt-gajst='sshfs gajst@gaj.st:/home/gajst/app /home/marko/Projects/gaj.st/live/ -p 22022'
+#alias mnt-gajst='sshfs freebsd@gaj.st:/usr/home/freebsd/gajst /home/marko/Projects/gaj.st/live'
+
+## Git:
+alias gicm='git commit -m'
+alias gip='git push'
+alias giaa='git add --all'
+alias gia='git add'
+alias gis='git status'
+alias gid='git diff'
+
+## Downloading:
+alias tflix='pirate-get --color -p 2 --custom "peerflix %s && smplayer http://192.168.1.180:8888"'
+alias fetch='saldl -i 1 -T -E'
+alias youtube-audio='youtube-dl -x --audio-format=mp3'
+
+## Other:
+alias php-server='php_server'
+alias gify='/home/marko/.scripts/scripts/gify.sh'
+alias extip='wget -O - -q icanhazip.com'
+alias yesno='~/.scripts/scripts/yesno.py'
+alias wiof="~/.scripts/scripts/whichof.php"
+alias vbox='sudo modprobe -a vboxdrv vboxnetflt vboxnetadp'
+alias upme="yaourt -Syua; sudo paccache -r; sudo paccache -ruk0"
+alias net-access='/home/marko/.scripts/scripts/net-access.sh'
+alias backup='~/.scripts/backup.sh'
+alias randomfile='tree -f --noreport -i | shuf -n 1'
+alias bsum='~/.scripts/js/budget.js'
+
+## Radios:
+alias ra-maxi='mplayer -playlist http://www.radiomaxi.si/live/RadioMaxiLive.pls'
+alias ra-si='mplayer http://mp3.rtvslo.si/rsi'
+alias ra-city='mplayer http://82.149.22.34:8000/CityMp364mono.mp3'
+
+## Xterm:
+alias reset='reset -Q'
+
+## PHP Server
+function php_server() {
+	if [[ -f router.php ]]; then
+		echo "Server will start with router.php"
+		php -S localhost:8000 router.php
+	else
+		echo "Server will start, no router.php"
+		php -S localhost:8000
+	fi
+}
+
+PS1='\n${debian_chroot:+($debian_chroot)}\[\033[38;5;246m\](\w)\[\033[0m\] $(git branch 2>/dev/null | grep '^*' | colrm 1 2)\n\[\033[38;5;240m\]›\[\033[00m\] '
+
+export EDITOR="nano"
+export VISUAL="nano"
+export HISTCONTROL=ignorespace
+#export TERM="xterm"
+#export TERM=screen-256color
+export TERM=xterm-256color
+
+# Make new tabs inherit current directory in Gnome Terminal
+# source /etc/profile.d/vte.sh
+
+# NVM
+# source /usr/share/nvm/init-nvm.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Import colorscheme from 'wal'
+(wal -r &)

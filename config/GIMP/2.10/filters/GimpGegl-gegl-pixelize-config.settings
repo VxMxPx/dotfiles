@@ -1,0 +1,12 @@
+# settings
+
+(GimpGegl-gegl-pixelize-config "2019-01-03 21:33:14"
+    (time 1546547594)
+    (norm square)
+    (size-x 594)
+    (size-y 594)
+    (ratio-x 1.000000)
+    (ratio-y 1.000000)
+    (background (color-rgba 1.000000 1.000000 1.000000 1.000000)))
+
+# end of settings

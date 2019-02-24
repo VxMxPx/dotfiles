@@ -1,0 +1,25 @@
+[Print Settings]
+cover-after=none
+print-at=now
+number-up=1
+reverse=false
+print-pages=all
+cups-InputSlot=Auto
+print-at-time=
+cups-JCLSkipBlankPages=False
+cups-Quality=600dpi
+cups-secContrast=50
+cups-secBrightness=50
+cups-MediaType=None
+cups-job-priority=50
+default-source=Auto
+collate=false
+cups-TonerSaveMode=Standard
+media-type=None
+cups-job-sheets=none,none
+cups-JCLEdgeEnhance=Normal
+cover-before=none
+printer=Samsung_M2020_Series
+page-set=all
+cups-number-up=1
+scale=100
