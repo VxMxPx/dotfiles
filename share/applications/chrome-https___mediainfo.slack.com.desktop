@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=MediaINFO Slack
-Icon=~/.resources/resources/icons/slack.png
+Icon=/home/marko/.resources/resources/icons/slack.png
 Exec=/usr/bin/chromium --profile-directory=Default --app=https://mediainfo.slack.com/
 Categories=X-GNOME-Other;
 StartupWMClass=mediainfo.slack.com

@@ -2,5 +2,5 @@
 static char * left_inactive_xpm[] = {
 "2 1 2 1",
 " 	c None",
-".	c #303030",
+".	c #222014",
 ".."};

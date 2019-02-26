@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Timer • Toggl
-Icon=~/.resources/resources/icons/toggl.png
+Icon=/home/marko/.resources/resources/icons/toggl.png
 Exec=/usr/bin/chromium --profile-directory=Default --app=https://toggl.com/app
 Categories=X-GNOME-Other;
 StartupWMClass=toggl.com__app

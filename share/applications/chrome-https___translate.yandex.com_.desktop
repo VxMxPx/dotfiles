@@ -5,5 +5,5 @@ Terminal=false
 Type=Application
 Name=Yandex.Translate
 Exec=/usr/bin/chromium --app=https://translate.yandex.com/
-Icon=~/.resources/resources/icons/yandex-translate.png
+Icon=/home/marko/.resources/resources/icons/yandex-translate.png
 StartupWMClass=translate.yandex.com

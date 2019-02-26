@@ -17,14 +17,11 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 foreground = ${xrdb:color7}
 background = ${xrdb:color0}
-;background = #353231
-background-alt = #444
-;foreground = ${xrdb:color7:#222}
-;foreground = #dfdfdf
-foreground-alt = #888
+foreground-alt = ${xrdb:color1}
+background-alt = ${xrdb:color2}
+; Not-used
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -61,7 +58,7 @@ font-4 = "Weather Icons:size=12;1"
 
 modules-left = xworkspaces
 modules-center = title
-modules-right = wlan updates-arch battery skype mail openweathermap-simple keyboard date time pulseaudio
+modules-right = wlan updates-arch battery temperature skype mail openweathermap-simple keyboard date events time pulseaudio
 
 tray-position = none
 tray-padding = 2
@@ -69,10 +66,39 @@ tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+enable-ipc = true
+
+[module/temperature]
+type = internal/temperature
+
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
+warn-temperature = 75
+
+
+format = %{A1:xterm -e 'watch -n 1 sensors':}<label>%{A}
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+format-warn = %{A1:xterm -e 'watch -n 1 sensors':}<label-warn>%{A}
+format-warn-prefix = " "
+format-warn-foreground = #f55
+
 [module/title]
 type = internal/xwindow
 label-maxlen = 100
 label-margin-left = 120
+
+[module/events]
+type = custom/script
+exec = ~/.resources/scripts/polybar/self/calendar-events.sh
+interval = 240
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+
+click-left = xterm -e 'khal --color list; echo -e "\n"; read line'
 
 [module/skype]
 type = custom/script
@@ -95,14 +121,18 @@ format-prefix-foreground = "#FFDA3E"
 click-left = ~/.resources/scripts/self/to.sh Yandex.Mail
 
 [module/updates-arch]
-type = custom/script
-exec = ~/.resources/scripts/polybar/external/updates-arch/updates-arch.sh
-interval = 600
+type = custom/ipc
+
+hook-0 = echo ""
+hook-1 = ~/.resources/scripts/polybar/self/updates-arch.sh
+hook-2 = echo "UPDATING..."
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 
-click-left = xterm -e yaourt -Syua; sudo paccache -r; sudo paccache -ruk0
+initial = 2
+
+click-left = xterm -e ~/.resources/scripts/system/update.sh
 
 [module/keyboard]
 type = internal/xkeyboard
@@ -118,7 +148,7 @@ format-prefix-foreground = ${colors.foreground-alt}
 
 [module/openweathermap-simple]
 type = custom/script
-exec = ~/.resources/scripts/polybar/external/openweathermap-simple/openweathermap-simple.sh
+exec = ~/.resources/scripts/polybar/self/openweathermap-simple.sh
 interval = 600
 label-font = 5
 
@@ -127,11 +157,11 @@ type = internal/network
 interface = wlp1s0
 interval = 3.0
 
-format-connected = %{A1:uxterm -e nmtui-connect:}<ramp-signal> <label-connected>%{A}
-; format-connected-underline = #9f78e1
+format-connected = %{A1:xterm -e nmtui-connect:}%{A3:xterm -e nmtui-edit:}<ramp-signal> <label-connected>%{A}%{A}
 label-connected = %essid%
 
-format-disconnected = %{A1:uxterm -e nmtui-connect:}%{A}
+format-disconnected = %{A1:xterm -e nmtui-connect:A3:xterm -e nmtui-edit:}%{A}
+format-disconnected-foreground = ${colors.foreground-alt}
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -153,7 +183,7 @@ type = internal/xworkspaces
 ; on different bars
 ;
 ; Default: false
-pin-workspaces = true
+pin-workspaces = false
 
 label-active-padding = 4
 label-occupied-padding = 4
@@ -168,7 +198,7 @@ enable-click = true
 ; Default: true
 enable-scroll = false
 
-label-active-background = #333
+label-active-background = ${colors.background-alt}
 
 [module/date]
 type = internal/date
@@ -179,7 +209,7 @@ date = %a %d %b
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 
-label = %date%
+label = %{A1:xterm -e khal --color interactive:} %date% %{A}
 
 [module/time]
 type = internal/date

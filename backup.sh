@@ -23,6 +23,7 @@ cp -R ~/.config/gedit $RESDIR/config
 cp -R ~/.config/GIMP $RESDIR/config
 cp -R ~/.config/inkscape $RESDIR/config
 cp -R ~/.config/polybar $RESDIR/config
+cp -R ~/.config/rofi $RESDIR/config
 cp -R ~/.devilspie $RESDIR/config
 
 # Themes

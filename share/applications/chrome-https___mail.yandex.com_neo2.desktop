@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Yandex.Mail
-Icon=~/.resources/resources/icons/yandex.png
+Icon=/home/marko/.resources/resources/icons/yandex.png
 Exec=/usr/bin/chromium --profile-directory=Default --app=https://mail.yandex.com/neo2/#inbox
 Categories=X-GNOME-Other;
 StartupWMClass=mail.yandex.com__neo2

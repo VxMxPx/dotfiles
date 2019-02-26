@@ -13,12 +13,23 @@ fi
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-# if [ ! -z "$(pgrep gpg-agent)" ]; then
-#     $GPGAGENT --daemon --enable-ssh-support --sh --write-env-file=$PID_FILE
-# fi
+#if [ ! -z "$(pgrep gpg-agent)" ]; then
+#    $GPGAGENT --daemon --enable-ssh-support --sh --write-env-file=$PID_FILE
+#fi
 
-# xset b off && xset s off
-# setterm -blank 0 -powersave off -powerdown 0
-# exec dbus-launch --exit-with-session --sh-syntax startxfce4
+xset b off && xset s off
+setterm -blank 0 -powersave off -powerdown 0
+exec dbus-launch --exit-with-session --sh-syntax startxfce4
 
-# export XDG_CURRENT_DESKTOP=GNOME
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
+export XDG_CURRENT_DESKTOP=GNOME
+
+sleep 2
+
+wal -i "$(< "${HOME}/.cache/wal/wal")"
+
+(polybar default &)
+(conky &)
+(~/.resources/scripts/system/cron/check-updates-polybar &)
