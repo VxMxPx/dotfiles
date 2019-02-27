@@ -2,6 +2,8 @@
 
 wal -i "$(< "${HOME}/.cache/wal/wal")"
 
+sleep 3
+
 (polybar default &)
 (conky &)
 

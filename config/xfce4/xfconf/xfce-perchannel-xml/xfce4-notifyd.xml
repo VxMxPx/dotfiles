@@ -10,8 +10,10 @@
     <property name="known_applications" type="array">
       <value type="string" value="chromium"/>
       <value type="string" value="com.uploadedlobster.peek"/>
+      <value type="string" value="epiphany"/>
       <value type="string" value="MEGAsync"/>
       <value type="string" value="notify-send"/>
+      <value type="string" value="notify-send.sh"/>
       <value type="string" value="org.gnome.Evolution-alarm-notify"/>
       <value type="string" value="rhythmbox"/>
       <value type="string" value="Skype"/>

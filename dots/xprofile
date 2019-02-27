@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export XDG_CURRENT_DESKTOP="GNOME"
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+(~/.resources/scripts/system/run-services.sh &)

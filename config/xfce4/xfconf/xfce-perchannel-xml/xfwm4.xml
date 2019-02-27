@@ -5,7 +5,7 @@
     <property name="activate_action" type="string" value="none"/>
     <property name="box_move" type="bool" value="false"/>
     <property name="box_resize" type="bool" value="false"/>
-    <property name="button_layout" type="string" value="|"/>
+    <property name="button_layout" type="string" value="O|"/>
     <property name="button_offset" type="int" value="0"/>
     <property name="button_spacing" type="int" value="0"/>
     <property name="click_to_focus" type="bool" value="true"/>
@@ -26,11 +26,11 @@
     <property name="raise_on_focus" type="bool" value="false"/>
     <property name="repeat_urgent_blink" type="bool" value="false"/>
     <property name="scroll_workspaces" type="bool" value="false"/>
-    <property name="shadow_delta_height" type="int" value="0"/>
-    <property name="shadow_delta_width" type="int" value="0"/>
+    <property name="shadow_delta_height" type="int" value="4"/>
+    <property name="shadow_delta_width" type="int" value="4"/>
     <property name="shadow_delta_x" type="int" value="0"/>
-    <property name="shadow_delta_y" type="int" value="-3"/>
-    <property name="shadow_opacity" type="int" value="50"/>
+    <property name="shadow_delta_y" type="int" value="0"/>
+    <property name="shadow_opacity" type="int" value="75"/>
     <property name="show_app_icon" type="bool" value="false"/>
     <property name="show_dock_shadow" type="bool" value="false"/>
     <property name="show_frame_shadow" type="bool" value="true"/>

@@ -55,10 +55,11 @@ font-1 = "Font Awesome 5 Free:style=Regular:pixelsize=12"
 font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=12"
 font-3 = "Font Awesome 5 Brands:pixelsize=12"
 font-4 = "Weather Icons:size=12;1"
+font-5 = "Fira Sans:style=Bold:pixelsize=10;2"
 
 modules-left = xworkspaces
 modules-center = title
-modules-right = wlan updates-arch battery temperature skype mail openweathermap-simple keyboard date events time pulseaudio
+modules-right = updates-arch wlan battery temperature skype mail openweathermap-simple keyboard date events time mic-state pulseaudio
 
 tray-position = none
 tray-padding = 2
@@ -95,10 +96,20 @@ type = custom/script
 exec = ~/.resources/scripts/polybar/self/calendar-events.sh
 interval = 240
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 
 click-left = xterm -e 'khal --color list; echo -e "\n"; read line'
+
+[module/mic-state]
+type = custom/script
+exec = if [ "$(amixer -D pulse sget Capture | grep 'Right: ' | grep '\[on\]' | awk '{ print $6 }')" == '[on]' ]; then echo " "; else echo ""; fi
+interval = 4
+
+format-prefix = ""
+format-prefix-foreground = ${colors.foreground-alt}
+
+click-left = ~/.resources/scripts/self/keyboard/volume.sh Capture toggle
 
 [module/skype]
 type = custom/script
@@ -140,6 +151,7 @@ type = internal/xkeyboard
 ; List of indicators to ignore
 blacklist-0 = num lock
 blacklist-1 = scroll lock
+blacklist-2 = caps lock
 
 label-layout = %layout%
 
@@ -185,10 +197,14 @@ type = internal/xworkspaces
 ; Default: false
 pin-workspaces = false
 
-label-active-padding = 4
+label-active-padding-left = 3
+label-active-padding-right = 4
+
 label-occupied-padding = 4
 label-urgent-padding = 4
 label-empty-padding = 4
+
+label-active-font = 6
 
 ; Create click handler used to focus desktop
 ; Default: true
@@ -206,7 +222,7 @@ interval = 60
 
 date = %a %d %b
 
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 
 label = %{A1:xterm -e khal --color interactive:} %date% %{A}

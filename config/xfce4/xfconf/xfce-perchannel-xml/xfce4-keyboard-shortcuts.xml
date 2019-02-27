@@ -33,12 +33,6 @@
       <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
       <property name="override" type="bool" value="true"/>
-      <property name="XF86AudioLowerVolume" type="string" value="amixer -D pulse sset Master 5%-"/>
-      <property name="XF86AudioRaiseVolume" type="string" value="amixer -D pulse sset Master 5%+"/>
-      <property name="XF86AudioMute" type="string" value="amixer -D pulse sset Master toggle"/>
-      <property name="XF86AudioMicMute" type="string" value="amixer set Capture toggle"/>
-      <property name="&lt;Shift&gt;XF86AudioLowerVolume" type="string" value="amixer -D pulse sset Capture 5%-"/>
-      <property name="&lt;Shift&gt;XF86AudioRaiseVolume" type="string" value="amixer -D pulse sset Capture 5%+"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="uxterm"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;f" type="string" value="nautilus"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xkblayout-state set +1"/>
@@ -46,9 +40,15 @@
       <property name="&lt;Primary&gt;&lt;Super&gt;Down" type="string" value="/home/marko/.resources/scripts/winmanip/winmanip.sh move down"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Left" type="string" value="/home/marko/.resources/scripts/winmanip/winmanip.sh move left"/>
       <property name="&lt;Primary&gt;&lt;Super&gt;Right" type="string" value="/home/marko/.resources/scripts/winmanip/winmanip.sh move right"/>
-      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/marko/.resources/scripts/winmanip/winmanip.sh move up"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="gnome-calculator"/>
       <property name="&lt;Primary&gt;space" type="string" value="rofi -combi-modi drun,window,run -show combi"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Up" type="string" value="/home/marko/.resources/scripts/winmanip/winmanip.sh move up"/>
+      <property name="XF86AudioLowerVolume" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Master minus"/>
+      <property name="XF86AudioRaiseVolume" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Master plus"/>
+      <property name="XF86AudioMute" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Master toggle"/>
+      <property name="XF86AudioMicMute" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Capture toggle"/>
+      <property name="&lt;Shift&gt;XF86AudioRaiseVolume" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Capture plus"/>
+      <property name="&lt;Shift&gt;XF86AudioLowerVolume" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Capture minus"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

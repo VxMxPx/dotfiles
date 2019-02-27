@@ -2,5 +2,5 @@
 static char * left_active_xpm[] = {
 "2 1 2 1",
 " 	c None",
-".	c #3B481F",
+".	c #CA769A",
 ".."};

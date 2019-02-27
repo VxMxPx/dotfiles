@@ -10,6 +10,7 @@ cp ~/.bash_logout $RESDIR/dots/bash_logout
 cp ~/.bash_profile $RESDIR/dots/bash_profile
 cp ~/.gtkrc-2.0 $RESDIR/dots/gtkrc-2.0
 cp ~/.xinitrc $RESDIR/dots/xinitrc
+cp ~/.xprofile $RESDIR/dots/xprofile
 cp ~/.Xresources $RESDIR/dots/Xresources
 cp ~/.conkyrc $RESDIR/dots/conkyrc
 cp /etc/nanorc $RESDIR/dots/nanorc

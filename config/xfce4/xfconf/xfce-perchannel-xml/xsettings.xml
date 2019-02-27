@@ -34,6 +34,6 @@
     <property name="MenuBarAccel" type="empty"/>
     <property name="CursorThemeName" type="string" value="Vanilla-DMZ"/>
     <property name="CursorThemeSize" type="empty"/>
-    <property name="DecorationLayout" type="string" value=":"/>
+    <property name="DecorationLayout" type="string" value="menu:"/>
   </property>
 </channel>

@@ -81,7 +81,5 @@ export TERM=xterm-256color
 # NVM
 # source /usr/share/nvm/init-nvm.sh
 
-export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
 # Import colorscheme from 'wal'
 (wal -r &)
