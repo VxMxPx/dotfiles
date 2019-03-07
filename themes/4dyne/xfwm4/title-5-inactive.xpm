@@ -2,7 +2,7 @@
 static char * title_5_inactive_xpm[] = {
 "4 10 2 1",
 " 	c None",
-".	c #181D28",
+".	c #211D16",
 "....",
 "....",
 "....",

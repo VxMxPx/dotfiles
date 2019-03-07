@@ -354,8 +354,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="150"
-       y="5.99997"
+       x="0"
+       y="0"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -609,8 +609,8 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="777"
-       y="912"
+       x="1494"
+       y="973"
        w="599"
        h="732"
        visible="0"
@@ -1013,7 +1013,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="line-height:1.25;fill:#5f463d;fill-opacity:1;stroke:#cccccc;stroke-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.3;stroke-linecap:round">
+     style="line-height:1.25;fill:#0d3691;fill-opacity:1;stroke:#cccccc;stroke-opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;opacity:0.3;stroke-linecap:round">
     <group
        width="808"
        height="480"

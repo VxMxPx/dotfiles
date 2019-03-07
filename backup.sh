@@ -40,6 +40,9 @@ cp ~/.local/share/applications/com.viber.Viber.desktop $RESDIR/share/application
 # Sync Scripts Directory
 rsync -avzh $RESDIR/* marko@mistik-pi.local:/home/marko/External/Dump/Home/Resources --delete --progress
 
+# Sync Documents
+rsync -avzh ~/Documents/Notes/* marko@mistik-pi.local:/home/marko/External/Documents/Notes --progress 
+
 # Sync Projects
 rsync -avzh ~/Projects/ marko@mistik-pi.local:/home/marko/External/Projects/Current/ --delete --progress
 

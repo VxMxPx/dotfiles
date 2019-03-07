@@ -49,6 +49,7 @@
       <property name="XF86AudioMicMute" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Capture toggle"/>
       <property name="&lt;Shift&gt;XF86AudioRaiseVolume" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Capture plus"/>
       <property name="&lt;Shift&gt;XF86AudioLowerVolume" type="string" value="/home/marko/.resources/scripts/self/keyboard/volume.sh Capture minus"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="gedit"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
